@@ -1,0 +1,24 @@
+{
+  "name": "swamp-compiler",
+  "version": "0.0.1",
+  "description": "function language without side effects",
+  "main": "index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "install": "binwrap-install",
+    "prepare": "binwrap-prepare",
+    "test": "binwrap-test",
+    "prepublish": "npm test"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "bin"
+  ],
+  "bin": {
+    "swamp": "bin/swamp"
+  },
+  "dependencies": {
+    "binwrap": "^0.2.2"
+  }
+}
